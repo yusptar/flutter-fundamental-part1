@@ -31,6 +31,6 @@ Menampilkan hasil project flutter, yang memanggil class InputWidget dengan widge
 ![Screenshot Praktikum_4_langkah_6](images/prak4_langkah6.png)
 Menampilkan hasil project flutter, yang dimana terdapat inisialisasi DateTime beserta pemanggilan variabel SelectedDate berisi tanggal sekarang kemudian pada widget menampilkan elevated button yang ketika diklik akan muncul filter tanggal sekarang
 ## Tugas Praktikum
-![Screenshot tugas_praktikum](images/tugas_praktikum_no2.png.png)
+![Screenshot tugas_praktikum](images/tugas_praktikum_no2.png)
 Menampilkan hasil project flutter, yang dimana file main.dart terdapat pemanggilan widget-widget yang ada pada folder basic widget 
 
