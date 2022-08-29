@@ -1,11 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:testerproject/basic_widgets/input_widget.dart';
 import 'package:testerproject/basic_widgets/text_widget.dart';
 import 'package:testerproject/basic_widgets/image_widget.dart';
 import 'package:testerproject/basic_widgets/loading_cupertino.dart';
 import 'package:testerproject/basic_widgets/fab_widget.dart';
 import 'package:testerproject/basic_widgets/dialog_widget.dart';
-import 'package:testerproject/basic_widgets/datetime_widget.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'My Increment App'),
+      home: const MyHomePage(title: 'My App'),
     );
   }
 }
@@ -61,8 +62,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            // const MyImageWidget(),
-            Text("${selectedDate.toLocal()}".split(' ')[0]),
+            const MyImageWidget(),
+            const MyTextWidget(),
+            const MyLayout(),
+            const InputWidget(),
             const SizedBox(
               height: 20.0,
             ),
@@ -74,9 +77,21 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text('Pilih Tanggal'),
             ),
+            const SizedBox(
+              height: 20.0,
+            ),
+            Text("${selectedDate.toLocal()}".split(' ')[0]),
+            const LoadingCupertinoWidget(),
+            const CupertinoActivityIndicator(),
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 50.0,
+        ),
+      ),
+      floatingActionButton: const FabWidget(),
     );
   }
 }
