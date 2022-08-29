@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
+import 'package:testerproject/basic_widgets/scaffold_widget.dart';
 import 'package:testerproject/main.dart';
 
 void main() {
